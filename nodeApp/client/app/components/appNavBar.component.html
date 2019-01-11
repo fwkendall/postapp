@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="nav navbar-nav navbar-">
+            <div>
+                <h5 class="row">Concierge App</h5>
+                <h6 class="row">{{subTitle}}</h6>
+            </div>
+
+        </div>
+        <div *ngIf="isLogin" class="form-group nav navbar-nav">
+            <input #searchText type="text" class="nav-searchbar form-control" placeholder="Search Post" (input)="searchValueChange($event)">
+        </div>
+        <div class="nav navbar-nav navbar-right">
+            <button *ngIf="isLogin" type="button" class="btn btn-secondary btn-sm" (click)="createPost()">Post</button>
+            <div *ngIf="!isLogin"><google-signin (userLogin)="onLogin($event)"></google-signin></div>
+            <button *ngIf="isLogin" type="button" class="btn btn-secondary btn-sm" (click)="logout()">Logout</button>
+        </div>
+        <div class="another-g-login-btn" *ngIf="!isLogin"><google-signin (userLogin)="onLogin($event)"></google-signin></div>
+    </div>
+</nav>

@@ -1,0 +1,30 @@
+h1 {
+  color: #cc0000;
+}
+
+div {
+  padding: 10pt;
+}
+
+.sub-title {
+    font-size: 8pt;
+}
+
+.title {
+    font-size: 12pt;
+}
+
+.post-td {
+  cursor: pointer;
+}
+
+.post-title {
+  color: black;
+}
+
+.another-g-login-btn {
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+  top: 224px;
+}

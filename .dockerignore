@@ -1,0 +1,4 @@
+node_modules
+npm-debug.log
+nodeApp/client/www
+nodeApp/node_modules

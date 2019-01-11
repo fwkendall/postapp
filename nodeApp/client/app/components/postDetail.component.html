@@ -1,0 +1,60 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <a routerLink="/" routerLinkActive="active">
+          <button class="btn">Back</button>
+        </a>
+    </div>
+    <!-- <div class="col-md-6" *ngIf="isAuthor">
+      <span>
+          <a class="btn">Edit Post</a>
+          <button class="btn" (click)="removePost()">Delete Post</button>
+      </span>
+    </div> -->
+    <div class="col-md-6" *ngIf="isAuthor">
+      <span class="pull-right">
+          <!-- <a class="btn">Edit Post</a> -->
+          <button class="btn" (click)="editPost()">Edit Post</button>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="row" *ngFor="let p of posts">
+
+    <!-- Post Content Column -->
+    <div class="col-lg-12">
+
+      <!-- Title -->
+      <h1 class="post-title mt-4">{{p.title}}</h1>
+
+      <!-- Author -->
+      <p class="lead">
+        <strong>by {{p.userName || 'User'}}</strong> | {{p.createdAt}}
+      </p>
+
+      <!-- Post Content -->
+      <div>
+        {{p.body}}
+      </div>
+
+      <hr>
+
+      <!-- Add Comment -->
+      <button type="button" class="btn btn-primary" (click)="addComment()">Add Comment</button>
+
+      <!-- Single Comment -->
+      <div class="media mb-4" *ngFor="let c of p.comments">
+        <div class="media-body">
+          <strong class="mt-0">{{c.userName}}</strong> | {{c.date}}
+          <div>{{c.content}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
