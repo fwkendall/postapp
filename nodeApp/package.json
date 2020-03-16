@@ -35,7 +35,7 @@
     "minimist": "^1.2.2",
     "moment": "^2.23.0",
     "mongodb": "^3.1.10",
-    "mongoose": "^5.4.3",
+    "mongoose": "^5.7.5",
     "ng2-bootstrap-modal": "^1.0.1",
     "nodemailer": "^5.0.0",
     "rxjs": "5.0.0-rc.4",
