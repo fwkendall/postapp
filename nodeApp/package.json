@@ -34,7 +34,7 @@
     "jquery-ui": "^1.12.1",
     "minimist": "^1.2.3",
     "moment": "^2.23.0",
-    "mongodb": "^3.1.10",
+    "mongodb": "^3.1.13",
     "mongoose": "^5.7.5",
     "ng2-bootstrap-modal": "^1.0.1",
     "nodemailer": "^5.0.0",
