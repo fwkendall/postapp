@@ -33,7 +33,7 @@
     "jquery": "^3.5.0",
     "jquery-ui": "^1.12.1",
     "minimist": "^1.2.3",
-    "moment": "^2.23.0",
+    "moment": "^2.29.2",
     "mongodb": "^3.1.10",
     "mongoose": "^5.7.5",
     "ng2-bootstrap-modal": "^1.0.1",
